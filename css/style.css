@@ -1,0 +1,51 @@
+:root {
+    --color-while: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+
+body {
+    background-color: var(--Light-pink) !important;
+    font-family: 'Work Sans', sans-serif !important;
+}
+
+.main {
+    position: relative;
+    width: 80% !important;
+    height: 100% !important;
+    background-color: var(--color-while) !important;
+    padding: 20px;
+    margin-top: -50px !important;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.main-title h1 {
+    display: inline;
+    color: var(--Dark-purple);
+
+}
+
+.accordion .accordion-button {
+    background-color: var(--color-while) !important;
+    color: var(--Dark-purple) !important;
+    font-weight: bold;
+}
+
+.accordion .accordion-body {
+    color: var(--Grayish-purple) !important;
+    font-weight: 400;
+}
+
+.accordion .accordion-button::after {
+    background-image: url(../assets/images/icon-plus.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../assets/images/icon-minus.svg) !important;
+
+}
